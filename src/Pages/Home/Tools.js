@@ -11,13 +11,13 @@ const Tools = () => {
             img: fluke
         },
         {
-            _id: 1, 
+            _id: 2, 
             name: 'Fluke AC/DC Insulation/ Resistance Tester 1000V (',
             descrption: 'Compact, rugged and easy to use, hand-held digital insulation tester with multiple test voltages. Includes remote test probe for repetitive testing and hard to reach areas. CAT IV 600V,1000V Insulation Tester,20.00 to 20.00kΩ Continuity Testing,0.01-20Ω Resistance,Real-Time Read-Out,Audible Tone,Digital Display,AC/DC Voltage & Resistance,Auto-Discharge of Capacitive Voltage',
             img: fluke
         },
         {
-            _id: 1, 
+            _id: 3, 
             name: 'Fluke AC/DC Insulation/ Resistance Tester 1000V (',
             descrption: 'Compact, rugged and easy to use, hand-held digital insulation tester with multiple test voltages. Includes remote test probe for repetitive testing and hard to reach areas. CAT IV 600V,1000V Insulation Tester,20.00 to 20.00kΩ Continuity Testing,0.01-20Ω Resistance,Real-Time Read-Out,Audible Tone,Digital Display,AC/DC Voltage & Resistance,Auto-Discharge of Capacitive Voltage',
             img: fluke
