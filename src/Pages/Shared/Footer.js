@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             </div>
                 <div className='my-10 text-center'>
-                    <p>Copyright<span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> {year} - All right reserved by The Best Electric Tools</p>
+                    <p>Copyright<span dangerouslySetInnerHTML={{ "__html": "&copy;" }} /> {year} - All right reserved</p>
                 </div>
             
         </footer>

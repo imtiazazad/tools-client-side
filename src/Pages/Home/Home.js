@@ -2,7 +2,7 @@ import React from 'react';
 import Banner from './Banner';
 import BusinessSummary from './BusinessSummary';
 import ContactUs from './ContactUs';
-import Footer from './Footer';
+import Footer from '../Shared/Footer';
 import Info from './Info';
 import Reviews from './Reviews';
 import Tools from './Tools';
