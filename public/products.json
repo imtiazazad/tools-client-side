@@ -1,0 +1,45 @@
+[
+    {
+        "_id":1,
+        "name": "Fluke AC/DC Insulation/ Resistance Tester 1000V",
+        "descrption": "Compact, rugged and easy to use, hand-held digital insulation tester with multiple test voltages. Includes remote test probe for repetitive testing and hard to reach areas. CAT IV 600V,1000V Insulation Tester,20.00 to 20.00kΩ Continuity Testing,0.01-20Ω Resistance,Real-Time Read-Out,Audible Tone,Digital Display,AC/DC Voltage & Resistance,Auto-Discharge of Capacitive Voltage",
+        "amount": 200,
+        "img": "https://i.ibb.co/zHznWsd/fluke-AC-DC.jpg"
+    },
+    {
+        "_id":2,
+        "name": "FLUKE AC NON-CONTACT VOLTAGE DETECTOR PEN 1000V AC",
+        "descrption": "Detects AC voltage through insulation without requiring contact to the bare conductor. CAT IV 1000V, LED & Audio Indication",
+        "amount": 220,
+        "img": "https://i.ibb.co/VTQVJqs/flukeAC.jpg"
+    },
+    {
+        "_id":3,
+        "name": "LAP MS6860D 16A SOCKET TESTER 230V AC",
+        "descrption": "Pocket-sized, mains socket tester with LED indicators to show condition of circuit sockets. CAT II 240V, LED Indicator",
+        "amount": 180,
+        "img": "https://i.ibb.co/1sN7XRf/socket.jpg"
+    },
+    {
+        "_id":4,
+        "name": "RATCHET CRIMPING TOOL 7",
+        "descrption": "Suitable for 1 to 10mm². Crimps 1-10mm² Electrical Wiring, Cold-Forged Carbon Steel Jaws, PVC Easy-Squeeze Handle",
+        "amount": 330,
+        "img": "https://i.ibb.co/2KXS563/RATCHET.jpg"
+    },
+    {
+        "_id":5,
+        "name": "C.K MIGHTY ROD 5MM FLEXIBLE CABLE ROD SET 10M",
+        "descrption": "High sheen, fibreglass and resin composite rods for a balance of rigidity and flexibility. Slimline connectors for reduced snagging and increased accessibility. Zinc-plated steel Mighty-Fix connectors with tensile strength in excess of 375g. Fibreglass Rods, For Most Cable Routing Jobs",
+        "amount": 400,
+        "img": "https://i.ibb.co/5Yz66mV/rod.jpg"
+    },
+    {
+
+        "_id":6,
+        "name": "KEWTECH TEST LEADS 1.15M",
+        "descrption": "Reliable 3-wire test leads for electrical testing instruments using standard 4mm connection. Tested for pull out, bending, strain relief and temperature performance. High performance crocodile clips give excellent testing consistency. Earth lead has piggy back feature for 2-wire testing. For use with Multi-Function Testers, Reliable 3-Wire Test Leads, Universal 4mm Connector",
+        "amount": 330,
+        "img": "https://i.ibb.co/jJHsn4C/KEWTECH.jpg"
+    }
+]

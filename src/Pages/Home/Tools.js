@@ -1,5 +1,5 @@
 import React from 'react';
-import fluke from '../../media/images/fluke.jpg';
+import fluke from '../../media/images/flukeAC.jpg';
 import Tool from './Tool';
 
 const Tools = () => {
