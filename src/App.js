@@ -8,19 +8,24 @@ import Login from './Pages/Login/Login';
 import Products from './Pages/Products/Products';
 import Purchase from './Pages/Products/Purchase';
 import SignUp from './Pages/Login/SignUp';
+import RequireAuth from './Pages/Login/RequireAuth';
 
 function App() {
   return (
     <div className='max-w-7xl mx-auto'>
       <Navbar></Navbar>
       <Routes>
-        <Route path="/" element={<Home/>} />
-        <Route path="about" element={<About/>} />
-        <Route path="products" element={<Products/>} />
-        <Route path='purchase' element={<Purchase/>} />
-        <Route path="login" element={<Login/>} />
-        <Route path="signup" element={<SignUp/>} />
-        
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="products" element={<Products />} />
+        <Route path='purchase' element={
+          <RequireAuth>
+            <Purchase/>
+          </RequireAuth>
+        } />
+        <Route path="login" element={<Login />} />
+        <Route path="signup" element={<SignUp />} />
+
       </Routes>
     </div>
   );
