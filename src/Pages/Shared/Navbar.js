@@ -19,6 +19,9 @@ const Navbar = () => {
         <li><Link to='/review'>Review</Link></li>
         <li><Link to='/contact'>Contact</Link></li>
         <li><Link to='/about'>About</Link></li>
+        {
+            user && <li><Link to='/dashboard'>Dashboard</Link></li>
+        }
         <li>{user ? <button className="btn btn-ghost" onClick={logout}>Sign Out</button> : 
  <Link to='/login'>Login</Link>}</li>
     </>
@@ -33,7 +36,7 @@ const Navbar = () => {
                         {menuItems}
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost normal-case text-xl">Best Electric Tools</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal p-0">

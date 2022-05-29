@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import Product from './Product';
-import Purchase from './Purchase';
 
 const AvailableProducts = () => {
     const [products, setProducts] = useState([]);
 
     useEffect( () => {
-        fetch('products.json')
+        fetch('http://localhost:5000/allProducts')
         .then(res => res.json())
         .then(data => setProducts(data));
     },[])
+    console.log(products)
     return (
         <div>
             <h2 className='text-xl text-primary text-center'>Available Products</h2>
@@ -21,12 +21,6 @@ const AvailableProducts = () => {
                     ></Product>)
                 }
             </div>
-            {
-                    products.map(product => <Purchase
-                        key={product._id}
-                        product={product}
-                    ></Purchase>)
-                }
         </div>
     );
 };
