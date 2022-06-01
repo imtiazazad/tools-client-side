@@ -1,6 +1,6 @@
 import React from 'react';
 
-const BuyModal = ({ buy}) => {
+const BuyModal = ({orders}) => {
     return (
         <div>
             <input type="checkbox" id="buyNow-modal-6" className="modal-toggle" />

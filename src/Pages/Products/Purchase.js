@@ -1,31 +1,63 @@
 import React, { useEffect, useState } from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
+import auth from '../../firebase.init';
 
 // vai check the ui all is working or not
 
 
 const Purchase = () => {
+    const [user]=useAuthState(auth)
     const [singleProduct,setSingleProduct]=useState({})
-    const {_id: id} = useParams();
+    const { id} = useParams(); //dont change this ok react-form-hooks user korsen? yes
+
+
     
     useEffect(()=>{
         const url = `http://localhost:5000/singleProduct?id=${id}`
+       if(id){
         fetch(url).then(res=>res.json()).then(data=>setSingleProduct(data))
+       }
     },[id])
-    console.log(singleProduct)
+    const {amount , description, img, name, minimum, price}=singleProduct;
+    
+
+    const handlePlaceOrder = ()=>{
+        const orderData = {
+            name: user?.displayName,
+            email: user?.email,
+        product: name,
+        }
+        fetch('http://localhost:5000/placeOrder', {
+            method:'POST',
+            headers: {
+                'content-type': 'application/json'
+            }
+            ,
+            body: JSON.stringify(orderData)
+        })
+    }
+
     return (
         <div className="card lg:max-w-lg bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
-                <img src={singleProduct?.img} alt="Shoes" className="rounded-xl" />
+                <img src={img} alt="Shoes" className="rounded-xl" />
             </figure>
             <div className="card-body items-center text-center">
-                <h2 className="card-title">Name: {singleProduct?.name}</h2>
-                <p>Available Tool: </p>
+                <h2 className="card-title">Name: {name}</h2>
+                <p>Available Tools: {amount}</p>
+                <p>Minumum order quantity: {minimum}</p>
+                <p>Price: {price}</p>
+                <p>{description}</p>
                 <div className="card-actions justify-center">
+                    <button onClick={handlePlaceOrder} className='btn btn-primary'>Order Now</button>
                 </div>
             </div>
         </div>
     );
 };
+
+// vai backend er code ber koren ok
 
 export default Purchase;

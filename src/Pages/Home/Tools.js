@@ -1,28 +1,14 @@
-import React from 'react';
-import fluke from '../../media/images/flukeAC.jpg';
+import React, { useEffect, useState } from 'react';
 import Tool from './Tool';
 
 const Tools = () => {
-    const tools = [
-        {
-            _id: 1, 
-            name: 'Fluke AC/DC Insulation/ Resistance Tester 1000V (',
-            descrption: 'Compact, rugged and easy to use, hand-held digital insulation tester with multiple test voltages. Includes remote test probe for repetitive testing and hard to reach areas. CAT IV 600V,1000V Insulation Tester,20.00 to 20.00kΩ Continuity Testing,0.01-20Ω Resistance,Real-Time Read-Out,Audible Tone,Digital Display,AC/DC Voltage & Resistance,Auto-Discharge of Capacitive Voltage',
-            img: fluke
-        },
-        {
-            _id: 2, 
-            name: 'Fluke AC/DC Insulation/ Resistance Tester 1000V (',
-            descrption: 'Compact, rugged and easy to use, hand-held digital insulation tester with multiple test voltages. Includes remote test probe for repetitive testing and hard to reach areas. CAT IV 600V,1000V Insulation Tester,20.00 to 20.00kΩ Continuity Testing,0.01-20Ω Resistance,Real-Time Read-Out,Audible Tone,Digital Display,AC/DC Voltage & Resistance,Auto-Discharge of Capacitive Voltage',
-            img: fluke
-        },
-        {
-            _id: 3, 
-            name: 'Fluke AC/DC Insulation/ Resistance Tester 1000V (',
-            descrption: 'Compact, rugged and easy to use, hand-held digital insulation tester with multiple test voltages. Includes remote test probe for repetitive testing and hard to reach areas. CAT IV 600V,1000V Insulation Tester,20.00 to 20.00kΩ Continuity Testing,0.01-20Ω Resistance,Real-Time Read-Out,Audible Tone,Digital Display,AC/DC Voltage & Resistance,Auto-Discharge of Capacitive Voltage',
-            img: fluke
-        }
-    ];
+    const [tools, setTools] = useState([]);
+    useEffect( () => {
+        fetch('http://localhost:5000/allProducts')
+        .then(res => res.json())
+        .then(data => setTools(data));
+    },[])
+
     return (
         <div className='my-28'>
             <div className='text-center'>

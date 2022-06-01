@@ -12,6 +12,9 @@ import RequireAuth from './Pages/Login/RequireAuth';
 import Dashboard from './Pages/Dashboard/Dashboard';
 import MyPurchase from './Pages/Dashboard/MyPurchase';
 import MyReview from './Pages/Dashboard/MyReview';
+import Blogs from './Pages/Blogs/Blogs';
+import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+
 
 function App() {
   return (
@@ -20,6 +23,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="blogs" element={<Blogs/>} />
+        <Route path="portfolio" element={<MyPortfolio/>} />
         <Route path="products" element={<Products />} />
         <Route path='purchase/:id' element={
           <RequireAuth>
