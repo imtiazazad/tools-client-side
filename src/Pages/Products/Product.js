@@ -14,9 +14,8 @@ const Product = ({product, setOrders}) => {
                 <h2 className="card-title">Name: {name}</h2>
                 <p>Available Tool: {product.amount}</p>
                 <div className="card-actions">
-                  
                     <button onClick={()=> navigate(`/purchase/${_id}`)} className="btn btn-primary">Buy Now</button>
-                    <label for="buyNow-modal-6" onClick={() => setOrders(product)} className="btn btn-primary">Order</label>
+                    
                 </div>
             </div>
         </div>

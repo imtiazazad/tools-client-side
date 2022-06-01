@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react';
-import BuyModal from './BuyModal';
 import Product from './Product';
 
 const AvailableProducts = () => {
     const [products, setProducts] = useState([]);
-    const [orders, setOrders] = useState(null);
+   
 
     useEffect( () => {
         fetch('http://localhost:5000/allProducts')
@@ -20,11 +19,9 @@ const AvailableProducts = () => {
                     products.map(product => <Product
                         key={product._id}
                         product={product}
-                        setOrders={setOrders}
                     ></Product>)
                 }
             </div>
-            {orders && <BuyModal orders={orders}> </BuyModal>}
         </div>
     );
 };

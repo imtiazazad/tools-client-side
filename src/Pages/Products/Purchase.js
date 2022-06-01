@@ -4,13 +4,11 @@ import { useForm } from 'react-hook-form';
 import { useParams } from 'react-router-dom';
 import auth from '../../firebase.init';
 
-// vai check the ui all is working or not
-
 
 const Purchase = () => {
     const [user]=useAuthState(auth)
     const [singleProduct,setSingleProduct]=useState({})
-    const { id} = useParams(); //dont change this ok react-form-hooks user korsen? yes
+    const { id} = useParams(); 
 
 
     
@@ -58,6 +56,5 @@ const Purchase = () => {
     );
 };
 
-// vai backend er code ber koren ok
 
 export default Purchase;
