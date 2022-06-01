@@ -2,7 +2,7 @@
 
 Name: Best Electric Tools
 Live Link: (https://travel-with-imtiaz.web.app/)
-Github link: (https://github.com/programming-hero-web-course-4/independent-service-provider-imtiazazad).
+Github link: (https://github.com/programming-hero-web-course1/manufacturer-website-client-side-imtiazazad).
 
 # Information about Website
 
@@ -10,7 +10,7 @@ Website's different features and functionality:
 1. Used routes to avoid loading on page change
 2. Private route after login for checkout
 3. Used react firebase hook for sign in, sign up, social, forgot password, error, loading.
-4. Toast for error handling
+4. Private route for purchase
 5. Once logged in, the sign out button appear.
 
 # Getting Started with Create React App

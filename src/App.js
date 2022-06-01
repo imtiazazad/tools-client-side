@@ -14,6 +14,7 @@ import MyPurchase from './Pages/Dashboard/MyPurchase';
 import MyReview from './Pages/Dashboard/MyReview';
 import Blogs from './Pages/Blogs/Blogs';
 import MyPortfolio from './Pages/MyPortfolio/MyPortfolio';
+import NotFound from './Pages/Shared/NotFound';
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         </Route>
         <Route path="login" element={<Login />} />
         <Route path="signup" element={<SignUp />} />
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
     </div>
