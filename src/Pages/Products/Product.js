@@ -15,7 +15,6 @@ const Product = ({product, setOrders}) => {
                 <p>Available Tool: {product.amount}</p>
                 <div className="card-actions">
                     <button onClick={()=> navigate(`/purchase/${_id}`)} className="btn btn-primary">Buy Now</button>
-                    
                 </div>
             </div>
         </div>

@@ -22,6 +22,7 @@ const AvailableProducts = () => {
                     ></Product>)
                 }
             </div>
+            
         </div>
     );
 };
