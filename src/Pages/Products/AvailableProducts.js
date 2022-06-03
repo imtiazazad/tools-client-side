@@ -6,7 +6,7 @@ const AvailableProducts = () => {
    
 
     useEffect( () => {
-        fetch('http://localhost:5000/allProducts')
+        fetch('https://damp-caverns-80632.herokuapp.com/allProducts')
         .then(res => res.json())
         .then(data => setProducts(data));
     },[])

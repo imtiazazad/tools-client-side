@@ -13,9 +13,11 @@ const Purchase = () => {
 
     
     useEffect(()=>{
-        const url = `http://localhost:5000/singleProduct?id=${id}`
+        const url = `https://damp-caverns-80632.herokuapp.com/singleProduct?id=${id}`
        if(id){
-        fetch(url).then(res=>res.json()).then(data=>setSingleProduct(data))
+        fetch(url)
+        .then(res=>res.json())
+        .then(data=>setSingleProduct(data))
        }
     },[id])
     const {amount , description, img, name, minimum, price}=singleProduct;
@@ -27,7 +29,7 @@ const Purchase = () => {
             email: user?.email,
         product: name,
         }
-        fetch('http://localhost:5000/placeOrder', {
+        fetch('https://damp-caverns-80632.herokuapp.com/placeOrder', {
             method:'POST',
             headers: {
                 'content-type': 'application/json'
